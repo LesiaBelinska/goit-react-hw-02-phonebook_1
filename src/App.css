@@ -1,0 +1,13 @@
+.App {
+  width: 1200px;
+  padding: 50px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 42px;
+}
+
+.subtitle {
+  font-size: 32px;
+}

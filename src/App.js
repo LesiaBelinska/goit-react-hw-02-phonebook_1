@@ -59,16 +59,16 @@ class App extends Component {
     const { filter, contacts } = this.state;
     const findContacts = this.findContacts
     return (
-      <>
-        <h1>Phonebook</h1>
+      <div className="App">
+        <h1 className="title">Phonebook</h1>
         <ContactForm onSubmit={this.addContact} contacts={contacts} />
-        <h2>Contacts</h2>
+        <h2 className="subtitle">Contacts</h2>
         <Filter value={filter} onChange={this.changeFilter} />
         <ContactList
           contacts={findContacts}
           onDeleteContact={this.deleteContact}
         />
-      </>
+      </div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
+import s from './Filter.module.css';
 
 class Filter extends Component {
 
@@ -8,9 +9,9 @@ class Filter extends Component {
 
     render() {
         return (
-            <label htmlFor={this.filterInputId}>
+            <label className={s.label} htmlFor={this.filterInputId}>
                 Find contacts by name
-                <input
+                <input className={s.input}
                     type='text'
                     value={this.props.value}
                     onChange={this.props.onChange}
